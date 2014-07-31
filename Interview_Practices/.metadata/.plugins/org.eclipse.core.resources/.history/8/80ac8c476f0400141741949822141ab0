@@ -1,0 +1,23 @@
+package asm.example.tabproj;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.TextView;
+
+public class Tab1Activity extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		TextView tv = new TextView(this);
+		tv.setTextSize(25);
+		tv.setGravity(Gravity.CENTER_VERTICAL);
+		int shiva_address = R.string.shiva;
+		tv.setText("Shiva"+shiva_address);
+		
+		
+	}
+}
